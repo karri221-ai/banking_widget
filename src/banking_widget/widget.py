@@ -4,6 +4,9 @@ from src.banking_widget.masks import get_mask_card_number, get_mask_account
 
 def mask_account_card(account_or_card: str) -> str:
     parts = account_or_card.split()
+    if len(parts) < 2:
+        return "Ошибка. Перепроверьте правильность написания данных"
+
     number = parts[-1]
     name = " ".join(parts[:-1])
 
