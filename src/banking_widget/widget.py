@@ -3,6 +3,7 @@ from src.banking_widget.masks import get_mask_card_number, get_mask_account
 
 
 def mask_account_card(account_or_card: str) -> str:
+    """Маскирует номер карты или счета из строки с типом и номером."""
     parts = account_or_card.split()
     if len(parts) < 2:
         return "Ошибка. Перепроверьте правильность написания данных"
@@ -17,5 +18,6 @@ def mask_account_card(account_or_card: str) -> str:
 
 
 def get_date(date_string: str) -> str:
+    """Конвертирует дату из ISO-формата в формат ДД.ММ.ГГГГ."""
     date = datetime.fromisoformat(date_string)
     return date.strftime("%d.%m.%Y")
