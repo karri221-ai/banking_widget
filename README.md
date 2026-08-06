@@ -87,7 +87,6 @@ def my_function(x, y):
 
 my_function(1, 2)  # запишет "my_function ok" в mylog.txt
 ```
-
 ### utils.py
 - `get_transactions(file_path)` — читает JSON-файл и возвращает список транзакций. При ошибке возвращает пустой список.
 
