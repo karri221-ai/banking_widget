@@ -16,3 +16,6 @@ env/
 
 # Poetry
 poetry.lock
+
+# logs
+logs/*.log
