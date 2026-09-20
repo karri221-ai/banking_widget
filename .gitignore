@@ -16,3 +16,6 @@ env/
 
 # Poetry
 poetry.lock
+
+# Coverage
+.coverage
